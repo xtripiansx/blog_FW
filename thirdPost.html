@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog Final Work</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Index</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Update</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">november 16, 2020 - november 22, 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p>At the beginning of the week I had a second call with my promotor of school. He was not satisfied of my work and saw that I was not developping what was described in my project description, meaning a CI/CD Pipeline. And that I did not provide satisfying explanations of the work done. He asked me to have a call with my mentor to try and see how we could better things.</p>
+
+        <p>I had a conversation with my mentor and a test specialist who worked on the "CI/CD Pipeline" and what I understood was that the priority was not the CI/CD Pipeline, but actually the continuous testing.</p>
+
+        <p>I am curious to see what will be discussed, because right now I do not know what I can do. I asked if i could set up a CI/CD Pipeline on Gitlab, but it was not necessary.</p>
+
+        <p>In the meanwhile I managed to advance in the stability of the selenium tests. I had so much trouble to stabilize the tests. The reasons for the failing were different each time and when I managed to stabilize everything, a couple of days later there were other errors.</p>
+
+        <p>The tests that are still not stabilized are: testAdminRooms and testChangeDetailsInBranding </p>
+
+        <p>I managed to run tests on SauceLabs, but my code was not accepted, It was not on the right place (in the structure of the project) and it was not flexible enough. It only ran tests on Chrome, and I was tasked to make it run with a given browser in a function argument.</p>
+
+        <p>I added a webdriver manager as a dependency in the pom.xml file. Now we don't need to have an executable of a webdriver. We just give the name of the browser and that browser is used for the tests. So, I can remove some code.</p>
+
+        <p>I began to write some documentation of the project, but it was not approved. I will change it up in the future.</p>
+
+        <p>The selenium test that I work on are originally part of another pipeline. That pipeline is called Pipeline_Demo and I began to write an analysis of it. I hope that in the future I would be able to integrate it in CI/CD Pipeline.</p>
+
+        <p>For next week I will try to stabilze the tests for good, hopefully work on CI/CD of some sort and analyse the other Pipeline (and write documentation).</p>
+
+          <!--
+          <a href="#">
+            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
+          </a>
+          <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+
+          <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+
+          <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+
+          <p>Placeholder text by
+            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
+            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+          -->
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
