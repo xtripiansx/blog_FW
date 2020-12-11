@@ -49,7 +49,7 @@
           <div class="post-heading">
             <h1>Update</h1>
             <h2 class="subheading"></h2>
-            <span class="meta">november 16, 2020 - november 22, 2020</span>
+            <span class="meta">november 30, 2020 - december 6, 2020</span>
           </div>
         </div>
       </div>
@@ -62,27 +62,15 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
 
-        <p>At the beginning of the week I had a second call with my promotor of school. He was not satisfied of my work and saw that I was not developping what was described in my project description, meaning a CI/CD Pipeline. And that I did not provide satisfying explanations of the work done. He asked me to have a call with my mentor to try and see how we could better things.</p>
+            <p>This week I tried different ways to connect my azure devops pipeline with the jenkins pipeline. I first had a service hook, that was triggered when there was a push to the source code. It would make a connection to the jenkins server and run a selected build.</p>
 
-        <p>I had a conversation with my mentor and a test specialist who worked on the "CI/CD Pipeline" and what I understood was that the priority was not the CI/CD Pipeline, but actually the continuous testing.</p>
+            <p>It worked but I was disappointed that there was no visual cues of what was triggered and when it was done. I also did not know what happened in Jenkins. After following some tutorials I decided to make a build pipeline. In the azure-pipeline.yml file I created a Task.</p>
 
-        <p>I am curious to see what will be discussed, because right now I do not know what I can do. I asked if i could set up a CI/CD Pipeline on Gitlab, but it was not necessary.</p>
+            <p>The task made a connection to the jenkins server and ran the given build. That approach satisfied me, because I saw if failed or passed based on the logs that Jenkins sent to azure devops.</p>
 
-        <p>In the meanwhile I managed to advance in the stability of the selenium tests. I had so much trouble to stabilize the tests. The reasons for the failing were different each time and when I managed to stabilize everything, a couple of days later there were other errors.</p>
+            <p>It took me a while to figure out how to make the pipeline, because I first thought to build the application before, but it was not necessary. Next step was to deploy the application to a Kubernetes cluster, so I began to read some docs.</p>
 
-        <p>The tests that are still not stabilized are: testAdminRooms and testChangeDetailsInBranding </p>
-
-        <p>I managed to run tests on SauceLabs, but my code was not accepted, It was not on the right place (in the structure of the project) and it was not flexible enough. It only ran tests on Chrome, and I was tasked to make it run with a given browser in a function argument.</p>
-
-        <p>I added a webdriver manager as a dependency in the pom.xml file. Now we don't need to have an executable of a webdriver. We just give the name of the browser and that browser is used for the tests. So, I can remove some code.</p>
-
-        <p>I began to write some documentation of the project, but it was not approved. I will change it up in the future.</p>
-
-        <p>The selenium test that I work on are originally part of another pipeline. That pipeline is called Pipeline_Demo and I began to write an analysis of it. I hope that in the future I would be able to integrate it in CI/CD Pipeline.</p>
-
-        <p>For next week I will try to stabilze the tests for good, hopefully work on CI/CD of some sort and analyse the other Pipeline (and write documentation).</p>
-
-          <!--
+            <!--
           <a href="#">
             <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
           </a>
