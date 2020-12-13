@@ -62,11 +62,25 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
 
-            <p>This week was very exhausiting. But in the end I am proud to finally be able to deploy the application to a Kubernetes cluster.</p>
+            <p>This week was very exhausting. But in the end I am proud to finally be able to deploy the application to a Kubernetes cluster.</p>
 
-            <p>UPDATE TO COME</p>
+            <p>I mainly followed this tutorial (https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app) to begin to understand and use Kubernetes. I created a Azure Container Registry (ACR, it is a private container registry that lets me securely build and deploy the applications and custom code.</p>
 
-            <p>Beginning next week I will have to work on another project at work. This means that my progress will slow down a bit, unfortunately.</p>
+            <p>In order to do so I had to create a resource group on azure. Using the azure CLI I created my ACR that is linked to my resource group. I tagged the images with my ACR server name and pushed them to the ACR.</p>
+
+            <p>Following that I created a kubernetes cluster using the kubernetes CLI. Using a demo project with a kubernetes manifest file, I pushed the demo to my ACR. I had to tag the name of the image with my ACR. This way van I push the manifest file, the image of the demo app will be pushed to my cluster.</p>
+
+            <p>After the deployment was done I could navigate to my cluster and see the demo app hosted.</p>
+
+            <p>I followed the tutorial numerous times because I did not quite understand how it worked. Eventually after reading some documentation I managed to deploy a manifest file of my app to my cluster.</p>
+
+            <p>Next up: writing analyses of docker, kubernetes and linter and reviewing with my mentor what he would like me to implement next.</p>
+
+            <p>This weekend I had to empty our family house so I did not manage to continue my work, but I will catch it up.</p>
+
+            <p>Beginning next week I will work on another project at work. This means that my progress will slow down a bit, unfortunately. BUT I used my remaining day offs for the end of the month so I will have a whole week to work to my hearts content on this Final Work.</p>
+
+            <p></p>
             <!--
           <a href="#">
             <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
